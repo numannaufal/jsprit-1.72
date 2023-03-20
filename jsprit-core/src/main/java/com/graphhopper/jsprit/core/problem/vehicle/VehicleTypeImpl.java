@@ -181,7 +181,6 @@ public class VehicleTypeImpl implements VehicleType {
          * @throws IllegalArgumentException if perDistance is smaller than zero
          */
         public VehicleTypeImpl.Builder setCostPerDistance(double perDistance) {
-            if (perDistance < 0.0) throw new IllegalArgumentException("cost per distance must not be smaller than zero");
             this.perDistance = perDistance;
             return this;
         }
